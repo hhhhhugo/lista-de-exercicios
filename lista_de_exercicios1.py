@@ -1,11 +1,11 @@
 def par_ou_impar():
-    numero = int(input('me diga um numero'))
+    numero = int(input('me diga um numero\n'))
     if numero % 2 == 0:
         print (f'{numero} é par')
     else:
         print(f'{numero} é impar')
 def checagem_de_idade():
-    idade = int(input('qual é a sua idade?'))
+    idade = int(input('qual é a sua idade?\n'))
     match idade:
         case idade if idade <= 12:
             print('voce é uma criança')
