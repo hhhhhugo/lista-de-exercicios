@@ -1,5 +1,6 @@
 import os;
 numero = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 ,9 , 10]
+numero_erro = []
 def opcao_invalida():
     print('opcao invalida\n')
     reiniciar()
@@ -18,10 +19,11 @@ def escolher_opcoes():
             case 5:
                 tabuada()
             case 6:
-                soma_lista()    
+                soma_lista()
+            case 7:
+                media_lista()        
     except:
         opcao_invalida()            
-
 def exibir_opcoes():
     print('1. numero de uma a 10')
     print('2. lista com quatro nomes')
@@ -29,6 +31,7 @@ def exibir_opcoes():
     print('4. soma dos numeros impares')
     print('5. Tabuada')
     print('6. Soma da lista')
+    print('7. media da lista')
 def exibir_o_nome_do_programa():
     print('Listas de exercicio 2\n ')
 def numeros_de_1_a_10():
@@ -76,6 +79,14 @@ def soma_lista():
     except:
         print ('a uma string na lista')
     reiniciar()        
+def media_lista():
+    print('eis a media da lista')
+    try:
+        media = sum(numero) / len(numero)
+        print(media)
+    except:
+        print('erro: tem uma string na lista ou a lista esta vazia')
+    reiniciar()    
 def reiniciar():
     input('\nDigite uma tecla para reiniciar')
     main()
