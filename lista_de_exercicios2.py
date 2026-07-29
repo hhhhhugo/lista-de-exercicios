@@ -25,6 +25,7 @@ def exibir_opcoes():
     print('2. lista com quatro nomes')
     print('3. ano de nascimento e ano atual')
     print('4. soma dos numeros impares')
+    print('5. Tabuada')
 def exibir_o_nome_do_programa():
     print('Listas de exercicio 2\n ')
 def numeros_de_1_a_10():
@@ -60,10 +61,10 @@ def soma_dos_numeros_impares():
     reiniciar()
 def tabuada():
     numero_tabuada = int(input('digite um numero'))
+    print(f'eis a tabuada de {str(numero_tabuada)}')
     for numeros in numero:
-        print(f'eis a tabuada de {str(numero_tabuada)}')
         print(numeros*numero_tabuada)
-        reiniciar()
+    reiniciar()
 def reiniciar():
     input('\nDigite uma tecla para reiniciar')
     main()
